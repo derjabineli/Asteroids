@@ -28,7 +28,7 @@ def main():
             sprite.update(dt)
 
         for sprite in asteroids:
-            if sprite.colide(player):
+            if sprite.collide(player):
                 print("Game over")
                 pygame.QUIT
                 return
